@@ -1,11 +1,11 @@
 cask "voxlit" do
-  version "1.0.0"
-  sha256 "9a081a3f85017c3011989038c449f7a726a89b0427d80662d03babcbb5f75db8"
+  version "1.0.1"
+  sha256 "9d772caef28fbb3147237fb26a60a7bcc564d5347c0a148de272f760277b0e02"
 
-  url "https://github.com/rajdeepchaudhari-work/voxlit/releases/download/v#{version}/Voxlit-#{version}-arm64.dmg"
+  url "https://github.com/rajdeepchaudhari-work/voxlit/releases/download/v#{version}/voxlit-#{version}-arm64.dmg"
   name "Voxlit"
   desc "Privacy-first, offline voice dictation for macOS"
-  homepage "https://github.com/rajdeepchaudhari-work/voxlit"
+  homepage "https://voxlit.co"
 
   depends_on macos: ">= :ventura"
   depends_on arch: :arm64
