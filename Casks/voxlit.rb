@@ -1,6 +1,6 @@
 cask "voxlit" do
   version "1.0.4"
-  sha256 "5bcbc8eb3675219a864eb8e9ada7d21c4d27dd803503e69534dc8bb6a79a6f3f"
+  sha256 "e8b4be89cb43f35058e8f0c118d2115f22d74aaaa08e567eab352bce0d9a35d1"
 
   url "https://github.com/rajdeepchaudhari-work/voxlit/releases/download/v#{version}/voxlit-#{version}-arm64.dmg"
   name "Voxlit"
