@@ -1,6 +1,6 @@
 cask "voxlit" do
-  version "1.0.5"
-  sha256 "e8b4be89cb43f35058e8f0c118d2115f22d74aaaa08e567eab352bce0d9a35d1"
+  version "1.0.7"
+  sha256 "41e80d648d06e94432660cbdbcd2811d7d27aa229a71f9910188c2d21cd0fbba"
 
   url "https://github.com/rajdeepchaudhari-work/voxlit/releases/download/v#{version}/voxlit-#{version}-arm64.dmg"
   name "Voxlit"
@@ -10,11 +10,15 @@ cask "voxlit" do
   depends_on macos: ">= :ventura"
   depends_on arch: :arm64
 
-  app "Voxlit.app"
+  app "voxlit.app"
 
   zap trash: [
     "~/Library/Application Support/Voxlit",
-    "~/Library/Preferences/app.voxlit.plist",
-    "~/Library/Saved Application State/app.voxlit.savedState",
+    "~/Library/Application Support/voxlit",
+    "~/Library/Preferences/com.electron.voxlit.plist",
+    "~/Library/Preferences/co.voxlit.app.plist",
+    "~/Library/Saved Application State/com.electron.voxlit.savedState",
+    "~/Library/Saved Application State/co.voxlit.app.savedState",
+    "~/Library/Logs/Voxlit",
   ]
 end
